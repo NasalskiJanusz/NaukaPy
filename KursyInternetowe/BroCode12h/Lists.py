@@ -53,3 +53,14 @@ food.clear()                            #usuwa elementy listy
 for foods in food:
     print(foods)
 
+# --------------------------------------2D-LIST------------------------------------------
+#o ile pamiętam to były macierze
+#
+# drinks = ['coffee','milk','soda']
+# desserts = ['cake','ice cream']
+# dinners = ['pizza', 'hamburger', 'spaghetti']
+#
+# food = [drinks, desserts, dinners]
+#
+# print(food[0])      #wyświetli tylko listę drinks (w zależności od indeksu
+# print(food[2][2])   #wyświetli tylko 3 element trzeciej listy
