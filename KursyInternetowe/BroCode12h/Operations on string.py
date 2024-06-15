@@ -1,11 +1,16 @@
 txt = " Hello world "
 txt.split
-print(txt.strip())                          #usuwa spacje
-txt = "Hello world"
-print(txt[2:5])                             #wypisuje 2:5 "llo"
-print(txt.upper())                          #uppercase
-print(txt.lower())                          #lowercase
-print(txt.replace("H","J"))     #zamiana znaków
+# print(txt.strip())                          #usuwa spacje
+# txt = "Hello world"
+# print(txt[2:5])                             #wypisuje 2:5 "llo"
+# print(txt.upper())                          #uppercase
+# print(txt.lower())                          #lowercase
+# print(txt.replace("H","J"))     #zamiana znaków
+
+
+
+
+
 
 
 '''
