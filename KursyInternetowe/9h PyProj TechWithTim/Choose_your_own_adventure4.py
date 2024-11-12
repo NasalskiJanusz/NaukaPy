@@ -24,6 +24,7 @@ classes = {
 # Przedmioty startowe
 StartItems = ["potion", "ring", "silver key", "golden nugget", "beer", "flute"]
 
+
 # Przeciwnicy
 Enemies = {
     "training manequin": {"HP": 100, "STR": 0, "INT": 0, "DEX": 0},

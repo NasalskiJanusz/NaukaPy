@@ -47,7 +47,7 @@ print("2. "+str(anythingElseCheck(exampleIsAlpha2)))
 
 
 
-#-----------------------------------------------------------END STATEMENTSs-------------------------------------------
+#-----------------------------------------------------------END STATEMENTS-------------------------------------------
 print("\n-----------------------------------------end='' statement----------------------------------------------")
 
 exampleList = ["Hi", "there", "buddy."]
@@ -83,12 +83,66 @@ for example in exampleList:
 # 5. end='\t'       adds "TAB" at the end of print with that value
 
 
+#-----------------------------------------------------------FILTER-------------------------------------------
+print("\n-----------------------------------------filter()----------------------------------------------")
+
+# nice way to execute function:
+def is_even(x):
+    return x % 2 == 0
+my_list = [1,2,3,4,5,6,7,8,9]
+
+# just use filter method
+# this method is used to process a sequence (list, tuple, etc.)
+# it returns elements that satisfy specific conditions
+# it takes two arguments:
+# (Function that returns True or False and Sequence of elements)
+
+result = filter(is_even, my_list)
+print(list(result))
 
 
+#-----------------------------------------------------------COMPREHENSION-------------------------------------------
+print("\n-----------------------------------------comprehension----------------------------------------------")
+# elegant way to make new list based on existing one
+# long way to solve exercise:
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
 
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
 
+print(newlist)
 
+# short way to do this using comprehension:
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+print(newlist)
 
-
-
+# benefits? 3 lines instead of 6, looks more elegant way
+# The Syntax:
+'''newlist = [expression for item in iterable if condition == True]'''
+# expression - current item in the iteration AND also the outcome
+# FOR item IN iterable - simple for loop to go through the list
+# IF condition == TRUE - (optional) element will be added in new list if...
+#
+# Other cool things about this topic:
+#
+# you can use range to iterate
+'''newlist = [x for x in range(10)]'''
+#
+# you can manipulate expression (current item in the iteration):
+'''newlist = [x.upper() for x in fruits]'''
+#
+# expression can also contain conditions, not like a filter, but as a way to manipulate the outcom
+'''newlist = [x if x != "banana" else "orange" for x in fruits]''' # returns "orange" instead of "banana"
+#
+#
+#
+#
+#
+#
+#
+#
+#
 

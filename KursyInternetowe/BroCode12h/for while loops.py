@@ -51,3 +51,9 @@
 #     i += 1
 # else:
 #     print("Oops! i is not greather than 6 anymore!")
+
+
+# iterating by index
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
